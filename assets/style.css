@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+    background: whitesmoke;
+   
+  }
+  
+  h1, h2, h3 {
+    margin: 20px 0px;
+    text-align: center;
+    font-family: monospace;
+  }
+  h1{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 2px  rgb(88, 70, 70)
+    
+    
+}
+  
+  footer {
+    margin-top: 20px;
+  }
+  nav{
+    background:#302424;
+    height: 90px;
+    width: 100%;
+   border-bottom: solid rgb(97, 92, 92) 2px; 
+  
+  }
+  
+  .logo{
+    color: whitesmoke;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+  
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    
+  
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+  }
+  
+  nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+      
+  }
+  #slides{
+    overflow: hidden;
+    height: 33,3vh;
+    box-shadow: 5px 5px 5px rgb(187, 181, 181)
+  
+  }
+  #slides figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: slides 20s infinite; 
+    
+  }
+  #slides figure img{
+    width: 20%;
+    float: left;
+    border-bottom: solid rgb(97, 92, 92) 2px;
+  
+  }
+  section, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  #conteudo-principal{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.CAIXASPRINC{
+ 
+  width: 130px;
+  height: 100px;
+  text-align: center;
+  background-color: #2e2929;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  border-radius:20%
+  
+}
+#logo-das-marcas{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+  #conteudo-principal-sobre-nos{
+    text-align: center;
+    font-size: 16PX;
+    font-weight: bold;
+    color: black;
+    background-color: whitesmoke; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 15px;
+    font-family: monospace;
+   
+ 
+ }
+ .ativaçãobtn{
+    font-size: 30px;
+    color:whitesmoke;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#botãomenures{
+    display: none;
+    
+}
+ .CAIXASPRINCC{
+     
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    border-radius:20%
+  }
+ 
+ footer {
+     
+    background-color:#251d1d;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    overflow: hidden;
+    font-family: monospace;
+    border-top: solid 2px rgb(94, 93, 93);
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 30px; 
+             
+             
+    }
+   
+    .CAIXAS-SOBRE-NOS{
+        font-size: 16px; 
+        
+        
+      
+    }
+    section h1{
+        font-size: 18px;
+    }
+    section h2{
+        font-size: 18px;
+    }
+    section h3{
+        font-size: 18px;
+    }
+    nav{
+        background:#302424;
+        display: flex;
+        justify-content: space-evenly;
+  
+      
+    }
+  
+   nav ul li a{
+        font-size: 20px;
+      
+       
+     
+   }
+  
+
+}
+
+
+@media(max-width: 858px){
+    .ativaçãobtn{
+      display: block;
+     
+
+    }
+    footer{
+        height: 70vh;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 160vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 200;  
+    }
+   
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 80px;
+    
+      
+     
+    }
+    nav ul li a{
+        font-size: 20px;
+        z-index: 300000;
+     
+     
+        
+    }
+   
+    a:hover{
+        color:whitesmoke;
+        font-weight: bold;
+    }
+    #botãomenures:checked ~ ul{
+        left:0;
+        position: absolute; 
+        justify-content: space-around;
+    }
+ 
+}
